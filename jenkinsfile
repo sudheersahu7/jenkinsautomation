@@ -1,14 +1,22 @@
 pipeline {
 agent any
 stages{
-	stage("scm"){
-		step "pull my code"
+	stage('SCM') {
+		steps {
+                       echo "pull my code"
+		       echo "git pull my code"
+	   }
+      }
+	
+        stage('Deploy') {
+		steps {
+			 echo "deploy my code"
+	    }
+       }
+	stage('Test') {
+		steps {
+			 echo "test my webapps"
 	}
-	stage("deploy"){
-		step echo "deploy my code"
-	}
-	stage("test"){
-		step echo "test my webapps"
-	}
+  }
 }
 }
