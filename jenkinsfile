@@ -11,6 +11,7 @@ stages{
         stage('Deploy my two stagesin sort time') {
 		steps {
 			 echo "deploy my code jenkins code and run very quickly and very rightly"
+                         git branch: 'main', url: 'https://github.com/simpligility/maven-repository-tools.git'
 	    }
        }
 	stage('Test') {
