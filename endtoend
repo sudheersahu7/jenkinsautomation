@@ -1,0 +1,17 @@
+pipeline {
+  agent {
+       label "sudheersahuu"
+       }
+  stages {
+        stage ('SCM') {
+	     steps {
+	         echo 'i am in scm stage'
+		}
+	     }
+	stage ('Build By Maven') {
+	    steps {
+	        echo 'i am in build by maven step'
+		}
+            }
+	}
+ }
