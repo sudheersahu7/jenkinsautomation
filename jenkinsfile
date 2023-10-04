@@ -8,9 +8,9 @@ stages{
 	   }
       }
 	
-        stage('Deploy') {
+        stage('Deploy my two stagesin sort time') {
 		steps {
-			 echo "deploy my code"
+			 echo "deploy my code jenkins code and run very quickly and very rightly"
 	    }
        }
 	stage('Test') {
